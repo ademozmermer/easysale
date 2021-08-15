@@ -20,7 +20,7 @@ class EasySaleServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/Migrations');
 
         $this->publishes([
-            __DIR__.'/config' => config_path('easysale.php'),
+            __DIR__.'/config' => config_path('/'),
         ], 'config');
 
         $this->publishes([
