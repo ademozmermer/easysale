@@ -1,0 +1,44 @@
+{
+    "name": "ademozmermer/easysale",
+    "description": "Musterilerden belirtilen kriterlerde urun satin alin",
+    "keywords": [
+        "sale",
+        "laravel"
+    ],
+    "homepage": "https://github.com/ademozmermer/easysale",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adem Ozmermer",
+            "email": "ademozmermer27@gmail.com",
+            "homepage": "https://github.com/ademozmermer/easysale",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^7.2.5|^8.0",
+        "illuminate/auth": "^6.0|^7.0|^8.0",
+        "illuminate/container": "^6.0|^7.0|^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AdemOzmermer\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AdemOzmermer\\EasySaleServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

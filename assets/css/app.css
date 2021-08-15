@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,100;1,200;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes bganimation {
+    0% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+    50% {
+        background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+    }
+    100% {
+        background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+    }
+}
+.header-main{
+    background: radial-gradient(ellipse at center,rgba(0,0,255,0.3) 0%,rgba(0,0,0,0) 70%),radial-gradient(ellipse at center,rgba(255,0,0,0.3) 0%,rgba(0,0,0,0) 70%),radial-gradient(ellipse at center,rgba(0,255,0,0.3) 0%,rgba(0,0,0,0) 70%) #c3d7db;
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-size: 900px 900px,900px 900px,900px 900px;
+    background-attachment: fixed;
+    padding-bottom: 1rem;
+    animation: bganimation 30s infinite;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.default-navbar{
+    background-color: #7952b3;
+}
+
+.buy-btn{
+    color: #fff!important;
+}
+.buy-btn:hover{
+    color: #000!important;
+}
+
+.content-header{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1rem;
+    height: 340px;
+}
+.main-text-first{
+    font-weight: 500;
+}
+.sale {
+    background: linear-gradient(to right,#e88708 0%,#a5136b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.header-sub-text{
+    font-size: 1.3rem;
+}
+
+.bilgiler {
+    display: flex;
+    justify-content: space-around;
+}
+.bilgi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding:2rem 3rem;
+    border-radius: 1rem;
+}
+
+.bilgi i {
+    font-size: 4rem;
+}
+.bilgi p {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 993px) {
+    .bilgi{
+        padding: 2rem 1rem;
+        flex-direction: row;
+        margin: 5px;
+    }
+
+    .bilgi i{
+        font-size: 3rem;
+    }
+    .bilgi p{
+        font-size: 1rem;
+        padding-left: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bilgiler{flex-direction: column}
+    .content-header{height: auto}
+}
+
+.btn-purple{
+    background-color: #7952b3;
+    border-color: #7952b3;
+    color: #ffffff;
+}
+
+.btn-purple:hover{
+    background-color: #9666d5;
+    color: #ffffff;
+}
+
+.category-title{
+    border-bottom: 1px solid;
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-color: #7952b3;
+}
+
+.card-title {
+    font-size: 0.8rem;
+}
+
+.card-body .btn {
+    font-size: 0.8rem;
+}
+
+.product {
+    border: 1px solid #000000;
+    padding: 0;
+}
+
+.product p {
+    margin:0;
+    background-color: #7952b3;
+    color: #fff;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.options {
+    border: 1px solid #7952b3;
+    padding: 1rem;
+}
+
+
+/**
+RADIO
+ */
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: #7952b3!important;
+    border: 1px solid #9666d5!important;
+}
+.ui-visual-focus {
+    box-shadow: none!important;
+}
+.ui-checkboxradio-radio-label{
+    width: 70%;
+    font-weight: bold!important;
+}
